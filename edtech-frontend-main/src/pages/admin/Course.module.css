@@ -1,0 +1,48 @@
+.coursePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.coursePageContent {
+  margin-top: 4rem;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.backButton {
+  align-self: start;
+  margin-left: 1.5rem !important;
+  background: var(--clr-black) !important;
+  color: var(--clr-white) !important;
+}
+.coursePageHeading {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.courseForm {
+  width: 95%;
+  display: grid;
+  row-gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+.controlsGroup {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.courseButton {
+  width: 7rem;
+  border-radius: var(--radius) !important;
+  margin: 0 auto !important;
+}
+@media screen and (min-width: 500px) {
+  .controlsGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+  .controlsGroup > * {
+    width: 48%;
+  }
+}

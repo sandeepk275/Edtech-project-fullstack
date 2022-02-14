@@ -1,0 +1,35 @@
+.listPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.listPageContent {
+  margin-top: 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.tableMainActionHeader {
+  margin: 1rem;
+}
+.publishedFilter {
+  margin-top: 0.5rem;
+}
+.loaderContainer {
+  align-self: center;
+  margin: auto 0;
+}
+.tableHead {
+  background: var(--clr-grey-light);
+}
+@media screen and (min-width: 320px) {
+  .tableMainActionHeader {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .publishedFilter {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}

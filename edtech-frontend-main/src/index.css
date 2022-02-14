@@ -1,0 +1,123 @@
+/* 
+================
+Google Font - Roboto
+Font weights needed by Typography in Material UI = [300, 400, 500, 700]
+https://material-ui.com/components/typography/#install-with-npm
+================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* 
+================
+global variables
+================
+*/
+:root {
+  /* primary colors */
+  --clr-primary-main: #d32f2f;
+  --clr-primary-light: #ffcdd2;
+
+  /* secondary colors */
+  --clr-secondary: #6d9c90;
+
+  /* shades of grey */
+  --clr-grey-light: #e2e2e2;
+  --clr-grey-dark: #707070;
+
+  /* other colors */
+  --clr-white: #fff;
+  --clr-black: #222;
+
+  /* text-related */
+  --ff-primary: "Roboto", sans-serif;
+  --spacing-low: 0.1rem;
+  --spacing-high: 0.25rem;
+
+  /* box-model-related */
+  --radius: 0.5rem;
+
+  /* shadows */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* misc */
+  --transition: all linear 0.3s;
+}
+
+/* 
+================
+css resets
+================
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-primary), sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: var(--spacing-low);
+  background: var(--clr-white);
+  color: var(--clr-black);
+  line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing-low);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-dark);
+}
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}

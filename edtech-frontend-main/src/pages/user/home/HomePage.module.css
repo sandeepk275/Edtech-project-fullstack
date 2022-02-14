@@ -1,0 +1,36 @@
+.homePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.loaderContainer {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.homePageContent {
+  margin-top: 4rem;
+  flex: 1;
+}
+.titleBar {
+  text-align: center;
+}
+.titleBar h4 {
+  background: var(--clr-grey-light);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: 0.5rem 0;
+}
+.courseCardsContainer {
+  padding: 2rem;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(80%, 23rem), 1fr));
+  gap: 2rem;
+}
+.noCourseFoundText {
+  padding: 2rem;
+}

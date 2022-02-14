@@ -1,0 +1,47 @@
+.summaryPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.summaryPageContent {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.summaryPageHeading {
+  padding-bottom: 1.5rem;
+}
+.summary {
+  width: 90%;
+  max-width: 25rem;
+  box-shadow: var(--light-shadow);
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+  display: grid;
+  row-gap: 2rem;
+}
+.bold {
+  font-weight: 700;
+}
+.pin,
+.phone {
+  display: flex;
+  justify-content: center;
+}
+.placeOrderBtn {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .summary {
+    max-width: 27rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .summary {
+    max-width: 30rem;
+  }
+}

@@ -1,0 +1,26 @@
+.notFoundPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notFoundPage h1 {
+  color: var(--clr-secondary);
+}
+.notFoundPage p {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.btn {
+  background: var(--clr-grey-dark);
+  color: var(--clr-white);
+  border: none;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  padding: 0.75rem 1.25rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  box-shadow: var(--dark-shadow);
+}
